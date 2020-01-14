@@ -1,0 +1,73 @@
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #fff;
+  background-color: #fff;
+  font-family: serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: black;
+  margin: 20px;
+}
+
+::selection {
+  color: white;
+  background: blue;
+  text-shadow: none; }
+
+::-moz-selection {
+  color: #fff;
+  background: blue;
+  text-shadow: none; }
+
+div {
+  margin-top: 1em;
+}
+
+/*********************************************
+ * TYPOGRAPHY
+ *********************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-shadow: none;
+  word-wrap: break-word;
+  padding-top: 0.5em;
+}
+
+ h1 {
+  font-size: 3em; }
+
+ h2 {
+  font-size: 2.2em;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -0.2px;
+ }
+
+ h3 {
+  font-size: 1.6em;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+}
+
+ h4 {
+  font-size: 1em; }
+
+ h1 {
+  text-shadow: none; }
+
+  p {
+    margin: 20px 0;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+  }
