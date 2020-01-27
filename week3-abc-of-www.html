@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>ABC of WWW</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/csm.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## The ABC of WWW
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						#### In today's highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.
+
+						J.R. Carpenter, [A Handmade Web](http://luckysoap.com/statements/handmadeweb.html), 2015
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						At its most basic, the Internet is a large network of computers which communicate all together.
+
+						The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						A website is basically a bunch of files living on a server somewhere.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+					<img data-src="images/client-server.png">
+
+					Diagram by [Minkyoung Kim](http://minkyoungkim.com/teaching/gdfws19/)
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						To access those files, you need to know their address.
+
+						Humans find information online through domain names, while web browsers interact through IP addresses.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					<img data-src="images/dns-ip.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### IP: Internet Protocol
+
+						A string of numbers that uniquely identifies your site.
+
+						You can look up a website's IP address at [https://ipinfo.info/html/ip_checker.php](https://ipinfo.info/html/ip_checker.php)
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### DNS: Domain Name System
+
+						The phonebook of the Internet.
+
+						DNS translates domain names to IP addresses so browsers can load Internet resources.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### URL: Uniform Resource Locator
+
+						<img data-src="images/url-anatomy-1.jpg">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### URL: Uniform Resource Locator
+
+						<img data-src="images/url-anatomy-2.jpg">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Buying domain names
+
+						[gandi.net](https://www.gandi.net/en-GB) and [hover.com](https://www.hover.com/) are some good domain name registrars.
+				</textarea>
+				</section>
+
+				<section data-markdown data-background="#FDFFAA">
+					<textarea data-template>
+						### Interlude: Every TLD has a story
+
+						[Domain Stories](http://citizen-ex.com/stories) by James Bridle
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Where should your website live on your computer?
+
+						When you are working on a website locally on your computer, you should keep all the related files in a single folder that mirrors the published website's file structure on the server.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### File names
+
+						Many computers, particularly web servers, are case-sensitive.
+
+						For example, if you put an image on your website at, `test-site/MyImage.jpg` and then in a different file you try to invoke the image as `test-site/myimage.jpg`, it may not work.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### File names
+
+						They also don't handle spaces consistently, so it's safest to seperate words with dashes, e.g. `my-file.html`.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Folder structure
+
+						<img data-src="images/folder-structure.png">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### File paths
+
+						<img data-src="images/file-paths.png">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Relative file paths
+
+						Down a directory: `subdirectory/example.jpg`
+
+						Up a directory: `../example.jpg`
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Publishing a website
+
+						As well as buying a domain name, you'll need somewhere to host your website.
+
+						If you're not using a service like [Cargo](https://cargo.site/), you'll need to buy your own hosting.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Hosting a website
+
+						[nearlyfreespeech.net](https://www.nearlyfreespeech.net/) is a cheap hosting service. You'll need to use FTP to transfer your files to their server.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### FTP: File Transfer Protocol
+
+						Some good ones are [Filezilla](https://filezilla-project.org/) (free) or [Transmit](https://panic.com/transmit/) ($45).
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						<img data-src="images/ftp.png">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### GitHub Pages
+
+						Otherwise, you can host a site directly from a GitHub repository for free with [GitHub Pages](https://pages.github.com/).
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### GitHub
+
+						A code hosting platform for version control and collaboration. It's built on Git, a version control system.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						<img data-src="images/github.png">
+
+						Diagram from [Save your Code Revisions Forever with Git](https://github.com/Rafase282/My-FreeCodeCamp-Code/wiki/Lesson-Save-your-Code-Revisions-Forever-with-Git)
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Online code editors
+
+						[Codepen](https://codepen.io/) is an online code editor. It allows you to edit and render code directly from the browser. You can use it for sharing code and debugging.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### HTML = Structure
+						### CSS = Style
+						### JavaScript = Behaviour
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						<img data-src="images/javascript.png">
+				</textarea>
+				</section>
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## HTML: HyperText Markup Language
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/html-tags.jpg">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/html-content.jpg">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/html-element.jpg">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/html-attribute.jpg">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### HTML attributes
+
+						HTML attributes are modifiers of HTML elements. They give specific directives to HTML elements and are located inside of opening tags.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### HTML attributes
+
+						One element can have multiple attibutes.
+
+						`<a href="index.html" target="_blank">home</a>`
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Empty elements
+
+						You can also have empty elements (without a closing tag).
+
+						`<img src="images/hypertext.png" alt="Early hypertext diagram by Ted Nelson">`
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						It's a very resilient language – browsers will always be able to show you something, even if it's broken.
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Anatomy of an HTML file
+
+						<img data-src="images/file-paths.png">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						`<!DOCTYPE html>`
+
+						Tells the browser what kind of document it's looking at
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						`<html>`
+
+						Wraps all the content in the page
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						`<head>`
+
+						All the stuff that _isn't_ your content, like metadata and links to stylesheets
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						`<meta charset="utf-8">`
+
+						Defines the character set, UTF-8, which includes most characters from the vast majority of written languages
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						`<body>`
+
+						Everything else
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Resources
+
+						[All HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+						[Getting to Know HTML](https://learn.shayhowe.com/html-css/getting-to-know-html/)
+
+						[HTML Essential Training](https://www.lynda.com/Web-Development-tutorials/HTML-Essential-Training/170427-2.html)
+
+						[Introduction to HTML](https://www.codecademy.com/learn/learn-html)
+
+						[Foundation HTML, CSS + Javascript](https://www.superhi.com/courses/html-css-javascript-foundation)
+
+						[Structuring the web with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Looking for help
+
+						[Stack Overflow](https://stackoverflow.com/)
+					</textarea>
+				</section>
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## Set up a GitHub Pages site
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Getting started
+
+						- Web browser with developer tools: [Google Chrome](https://www.google.com/chrome/)
+						- Text editor: [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/)
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 0
+
+						Sign up for an account on [GitHub](https://github.com/).
+
+						Download [Github Desktop](https://desktop.github.com/) application and install it on your local computer.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 1
+
+						Create a new repository named `username.github.io`, where `username` is your GitHub username.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 2
+
+						Clone the repository by clicking the "Set up in Desktop" button.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 3
+
+						Open your text editor and create a new file called `index.html`.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/file-paths.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Commit
+
+						On GitHub, saved changes are called commits. Each commit has an associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes, so other contributors can understand what you’ve done and why.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 4
+
+						Commit your changes and press publish.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 5
+
+						Open your browser and go to `username.github.io`.
+					</textarea>
+				</section>
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## Analyse a website
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/2019-websites.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Chrome DevTools
+
+						You can use the Inspector to edit pages, test responsive viewports and diagnose problems.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Step 0
+
+						If you haven't already, find one website that you love and one that you hate.
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Websites about new websites
+
+						[Hover States](https://hoverstat.es/)
+
+						[Klikkentheke](https://klikkentheke.com/)
+
+						[Websites about new websites channel](https://www.are.na/laurel-schwulst/websites-about-new-websites)
+
+						[Internet Explorers channel](https://www.are.na/gemma-copeland/internet-explorers)
+					</textarea>
+				</section>
+
+				<section>
+					<h3>Step 1</h3>
+
+						Download and fill out <a href="website-questionnaire.txt" target="_blank">this questionnaire</a>.
+				</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### Step 2
+
+							Setup a typical website folder structure in your GitHub Pages directory.
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### Step 3
+
+							Create a new HTML file.
+
+							Add your questionnaire answers and mark them up using HTML tags.
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### Step 4
+
+							Test your results by opening the html file in Chrome.
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### Step 5
+
+							Upload your html file to your Github repository, and add a link to the page on your homepage.
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### Hyperlinks
+
+							[Resilient Web Design](https://resilientwebdesign.com/)
+
+							[Basic HTML is the New Punk Folk Explosion](https://coolguy.website/writing/basic-html-is-the-new-punk-folk-explosion.html)
+
+							[Everything Easy is Hard Again](https://frankchimero.com/writing/everything-easy-is-hard-again/)
+
+							[Why GOV.UK content should be published in HTML and not PDF](https://gds.blog.gov.uk/2018/07/16/why-gov-uk-content-should-be-published-in-html-and-not-pdf/)
+
+							[Motherfucking Website](http://motherfuckingwebsite.com/)
+						</textarea>
+					</section>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
