@@ -6,18 +6,26 @@ What kind of site is it?
 
 Who is the audience?
 
-What type of content does it feature; long-form text, slideshows, videos, etc?
+What type of content does it feature: long-form text, slideshows, videos, etc?
+
+What is the reading experience like?
 
 What typefaces, type sizes and colours are used?
 
 How would you describe it aesthetically? Beautiful, clunky, boring, sparse, packed, ugly? Why?
 
-How does the menu function?
+How do you navigate the site?
 
-What can you interpret about the org/person/group by what you see? Do you trust them, are you suspicious, ambivalent, etc?
+What can you interpret about the organisation/person/group by what you see? Do you trust them, are you suspicious, ambivalent, etc?
 
 What kind of tone does the website set: fun, serious, slick, corporate, DIY?
 
 Are there any surprises as you click around?
 
 Is there anything particularly annoying or confusing about it?
+
+Using the Inspector tool, look at the different content blocks. How have they structured the website?
+
+What happens when you look at it on mobile?
+
+What happens when you look at it at a slower speed?
