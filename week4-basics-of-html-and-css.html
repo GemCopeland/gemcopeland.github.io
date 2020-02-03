@@ -41,12 +41,10 @@
 				</textarea>
 				</section>
 
-				<section data-markdown>
+				<section data-markdown data-background="blue" color="white">
 					<textarea data-template>
-						### HTML = Structure
-						### CSS = Style
-						### JavaScript = Behaviour
-				</textarea>
+						## HTML = Structure
+					</textarea>
 				</section>
 
 				<section data-markdown>
@@ -194,13 +192,166 @@
 				<section data-markdown>
 					<textarea data-template>
 
-						### Links
+						### Creating links
 
-						`<a href="https://www.are.na/">`: external site
-						`<a href="page.html">`: within the same directory
-						`<a href="folder/page.html">`: within a subdirectory
-						`<a href="../folder/page.html">`: up a directory
-						`<a href="#section">`: within the same file
+						- `<a href="https://www.are.na/">`: external site
+						- `<a href="page.html">`: within the same directory
+						- `<a href="folder/page.html">`: within a subdirectory
+						- `<a href="../folder/page.html">`: up a directory
+						- `<a href="#section">`: within the same file
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Markup your written reflection
+
+						- Think about which tags are appropriate for which content
+						- [All HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+				</textarea>
+				</section>
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## CSS = Style
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### External style sheets
+
+						- Create a new file in the `css` folder of your website called `main.css`
+						- In the `<head>` section of your HTML file, add `<link rel="stylesheet" href="main.css">`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Anatomy of CSS
+						<img data-src="images/css-anatomy.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Anatomy of CSS
+
+						- Each rule selects an element and declares how it looks
+						- Rules for each selector are surrounded by curly braces
+						- Properties are separated by semicolons
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Selectors
+
+						- element, e.g. `body`, `p`
+						- class, e.g. `.sidebar`
+						- id, e.g. `#container`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Specificity
+
+						- Combine selectors to highlight specific groups by placing selectors together without spaces
+						- e.g. `body.home` refers to a `body` element with the class of `home`
+						- `<body class="home"></body>` in the HTML
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Cascades
+
+						- There is a hierarchy for how styles are applied
+						- Styles defined in an external style sheet override any browser defaults
+						- Internal styles (typically found in the `<head>` section of a page) override external styles
+						- Element styles (applied directly to an element) override internal styles
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Within a stylesheet
+
+						- The last rule in a single declaration block will be the one applied
+						- The most specific style will be the one applied
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Box model
+
+						<img data-src="images/box-model.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Inline elements
+
+						- Inline elements “go with the flow.” If you put a lot of inline elements together, you’ll notice them flow left to right like text.
+						- `img`,`a`,`span`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Block elements
+
+						- Block elements "stack one on top of another” … like blocks.
+						- `h1`,`p`,`div`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Basic properties
+
+						- Color: `color`,`background-color`,`opacity`
+						- Text: `text-align`, `font-size`, `font-style`
+						- Pseudo-selectors: `:hover`, `:visited`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Custom fonts
+
+						- `@font-face`
+						- Embed from [Google Fonts](https://fonts.google.com/)
+						- Generate a webfont kit via [Font Squirrel](https://www.fontsquirrel.com/)
 
 				</textarea>
 				</section>
