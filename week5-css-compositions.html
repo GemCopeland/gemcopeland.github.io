@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HTML and CSS Basics</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/csm.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown>
+					<textarea data-template>
+						### Before we start
+
+						- Install [Google Chrome](https://www.google.co.uk/chrome/)
+						- Install a code text editor like [Atom](https://atom.io/) or [SublimeText](https://www.sublimetext.com/)
+				</textarea>
+				</section>
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## CSS Compositions
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Recap from previous weeks
+
+						- HTML = Structure
+						- CSS = Style
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/reusable-css-stylesheets.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Anatomy of CSS
+						<img data-src="images/css-anatomy.png">
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						<img data-src="images/box-model.png">
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Box model
+
+						- `content`
+						- `margin`
+						- `border`
+						- `padding`
+
+						[Demo](https://mattwolff.github.io/interactive/boxify.html)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Units of measurement
+
+						- Pixels `px` are the most straightforward and inflexible
+						- Percentages `%` are flexible and dependent on their parent container
+						- Ems `em` are dependent on whatever `font-size` the `body` is
+						- `vh` and `vw` stand for viewport height and viewport width
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Inline elements
+
+						Inline elements “go with the flow.” If you put a lot of inline elements together, you’ll notice them flow left to right like text.
+
+						- `img`
+						- `a`
+						- `span`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Block elements
+
+						Block elements "stack one on top of another” … like blocks.
+
+						- `h1`
+						- `p`
+						- `div`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### CSS Layout and Positioning
+
+						- Using CSS, you can position items across the page—things don’t have to appear one after the other in succession.
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Position
+
+						The position property can help you manipulate the location of an element.
+
+						- `position: static` – default
+						- `position: relative`
+						- `position: absolute`
+						- `position: fixed`
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Position declarations
+
+						You need to specify where your element will be, e.g.:
+
+						- `top: 5px`
+						- `right: 0`
+						- `bottom: 20px`
+						- `left: 12px`
+
+						[Demo](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Display
+
+						Every element on a webpage is a box. The display property determines exactly how that box behaves.
+
+						- `display: block` — default (depending on element)
+						- `display: inline` — default (depending on element)
+						- `display: inline-block`
+						- `display: none`
+
+						[Demo](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_display)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Float
+
+						The `float` CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
+
+						- `float: none` — default
+						- `float: left`
+						- `float: right`
+
+						[Demo](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Clear
+
+						If an element can fit horizontally in the space next to another element which is floated, it will. Apply `clear` to move the element below instead.
+
+						- `clear: both`
+
+						[Demo](https://css-tricks.com/almanac/properties/c/clear/)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Resetting styles
+
+						It's a good idea to override default styles to a predictable value using the “universal” CSS selector (*):
+
+						- `margin: 0;`
+						- `padding: 0;`
+						- `box-sizing: border-box;`
+
+				</textarea>
+				</section>
+
+				<section data-markdown data-background="blue" color="white">
+					<textarea data-template>
+						## Workshop
+
+						1. Find an abstract composition you like
+						2. Recreate it in CSS
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Abstract compositions
+
+						[Arena channel](https://www.are.na/gemma-copeland/css-compositions)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Resources
+
+						- [CSS Layout Cheat Sheet](https://learn-the-web.algonquindesign.ca/topics/css-layout-cheat-sheet/)
+						- [The Shapes of CSS](https://css-tricks.com/the-shapes-of-css/)
+						- [CSS Gradients](https://css-tricks.com/css3-gradients/)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Where to learn more
+
+						- [Learn Layout](http://learnlayout.com/)
+						- [Interneting is Hard](https://internetingishard.com/html-and-css/css-box-model/)
+						- [Opening the Box Model](https://learn.shayhowe.com/html-css/opening-the-box-model/)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Next steps
+
+						- Can you reinterpret the artwork in a digital-first way?
+						- Make it responsive? Interactive?
+						- Can you recreate another artwork?
+						- Can you make a navigation system for moving between your artworks?
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Flexbox and Grid Layout
+
+						The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space. A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Learning Flexbox
+
+						- [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+						- [Flexbox Froggy](https://flexboxfroggy.com)
+
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Learning Grid Layout
+
+						- [Grid by Example](https://gridbyexample.com/)
+						- [Mozilla Guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+						- [Grid Garden](https://cssgridgarden.com/)
+
+				</textarea>
+				</section>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
